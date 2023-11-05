@@ -25,3 +25,38 @@
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid white;
 }
+
+.puzzle_container {
+    width: 200px;
+    height: 200px;
+    margin: 1px;
+    padding: 1px;
+}
+
+@media (max-width: 768px) {
+    .puzzle_container {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 576px) {
+    .puzzle_container {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 330px) {
+    .puzzle_container {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 225px) {
+    .puzzle_container {
+        width: 20px;
+        height: 20px;
+    }
+}
