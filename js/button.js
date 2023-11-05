@@ -13,3 +13,7 @@ button.addEventListener('mouseout', () => {
     button.style.transform = 'scale(1)';
     button.style.boxShadow = 'none';
 });
+
+button.addEventListener('click', function() {
+    location.reload(); // Reload the page when the button is clicked
+});
