@@ -19,3 +19,9 @@
 .footer a{
     text-decoration: none;
 }
+
+.list-group-item {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid white;
+}

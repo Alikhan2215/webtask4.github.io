@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jujutsu Kaisen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f5c7d6a886.js" crossorigin="anonymous"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            background-image: url("./img/bgSatoru.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Site Logo" style="width:160px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="MappaStudio.html">Mappa Studio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TOP Titles</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="jujutsuKaisen.html">Jujutsu Kaisen</a></li>
+                        <li><a class="dropdown-item" href="#">Attack on Titan: Final Season</a></li>
+                        <li><a class="dropdown-item" href="#">Chainsaw Man</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mini-Game <i class="fa-solid fa-gamepad"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END OF NAVBAR -->
+
+<!-- SITE CONTENT -->
+<div class="container-sm px-5 pt-3 pb-4" id="accordion">
+    <div class="row">
+        <div class="col">
+            <p class="h1 text-center">Jujutsu Kaisen</p>
+            <div class="d-flex justify-content-center">
+                <div class="list-group list-group-horizontal">
+                    <a class="list-group-item list-group-action" data-bs-toggle="collapse" href="#description">Description</a>
+                    <a class="list-group-item list-group-action" data-bs-toggle="collapse" href="#mainCharacters">Main Characters</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div id="description" class="collapse show pt-4" data-bs-parent="#accordion">
+                <img src="./img/JKPoster.jpg" alt="Jujutsu Kaisen" width="150px" class="rounded float-start mx-3">
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;Jujutsu Kaisen is the story of Yuji Itadori, an easygoing high school student who joins the occult
+                    club at school. When they accidentally summon grotesque creatures by messing with a cursed object,
+                    Itadori fights to save his friends’ lives. A sorcerer, drawn to the school by the dangerous object,
+                    reveals that it grants powerful cursed energy when swallowed. Desperate to save everyone, Itadori
+                    swallows the talisman—a decomposed finger. As a result, he’s possessed by Sukuna, the king of curses,
+                    and his life changes forever.</p>
+
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;Curses are monstrosities formed by an overwhelming amount of negative emotions, like shame or regret.
+                    The curses are drawn to places where those feelings are strongest. Unsuspecting humans are frequently
+                    attacked and killed by these horrors, and it’s up to brave and powerful sorcerers to destroy them before
+                    they cause more harm.</p>
+
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;Sukuna’s 20 fingers are scattered around the world. If Itadori can track down and ingest every finger,
+                    he’ll absorb even more of the curse into his body. If Itadori is then killed, the curse will be
+                    completely destroyed along with him. The young student accepts the mission to put an end to Sukuna
+                    once and for all. He enrolls in Jujutsu Tech High School to learn sorcery techniques to aid in the
+                    search for the remaining fingers.</p>
+                <h1>Trailer</h1><br>
+                <div class="d-flex justify-content-center">
+                    <div id="youtube-video"></div>
+                </div>
+            </div>
+            <div id="mainCharacters" class="collapse pt-4" data-bs-parent="#accordion">
+                <div class="row text-center">
+                    <div class="col">
+                        <img src="./img/avaItadori.jpg" alt="Yuji Itadori" width="200px" class="rounded d-block mx-auto mb-3 mt-4">
+                        <p>Yuji Itadori</p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/avaMegumi.jpg" alt="Megumi Fushiguro" width="200px" class="rounded d-block mx-auto mb-3 mt-4">
+                        <p>Megumi Fushiguro</p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/avaNobara.jpg" alt="Nobara Kugisaki" width="200px" class="rounded d-block mx-auto mb-3 mt-4">
+                        <p>Nobara Kugisaki</p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/avaSatoru.jpg" alt="Satoru Gojo" width="200px" class="rounded d-block mx-auto mb-3 mt-4">
+                        <p>Satoru Gojo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- END OF SITE CONTENT -->
+
+<!-- FOOTER -->
+<div class="footer text-center mt-5 pt-4 pb-4">
+    <p>&copy; 2023 MAPPA</p>
+    <a href="https://www.instagram.com/mappastudios/?hl=en"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
+    <a href="https://www.mappa.co.jp/"><i class="fa-regular fa-square-check"></i> Official Site</a>
+</div>
+
+</body>
+</html>
