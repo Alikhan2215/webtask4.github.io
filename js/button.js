@@ -15,5 +15,5 @@ button.addEventListener('mouseout', () => {
 });
 
 button.addEventListener('click', function() {
-    location.reload(); // Reload the page when the button is clicked
+    location.reload();
 });
