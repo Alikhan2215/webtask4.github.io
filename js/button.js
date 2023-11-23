@@ -14,6 +14,3 @@ button.addEventListener('mouseout', () => {
     button.style.boxShadow = 'none';
 });
 
-button.addEventListener('click', function() {
-    location.reload();
-});

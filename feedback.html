@@ -45,6 +45,9 @@
                     <a class="nav-link" href="game.html">Mini-Game <i class="fa-solid fa-gamepad"></i></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz <i class="fa-solid fa-feather"></i></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
                 </li>
             </ul>
@@ -63,16 +66,32 @@
     <div class="row">
         <div class="col mx-3">
             <form>
-                <label for="email" class="form-label">Email:</label>
-                <div class="mb-3 mt-3 row">
-                    <div class="col-6">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="col-3">
-                        <button type="button" class="btn btn-primary" id="subscribeButton" data-bs-toggle="popover" data-bs-content="You have subscribed!">Subscribe</button>
-                        <script src="js/script.js"></script>
+                <div id="step1">
+                    <label for="name" class="form-label">Name:</label>
+                    <div class="mb-3 mt-3 row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                        </div>
+                        <div class="col-3">
+                            <button onclick="nextStep()" class="btn btn-primary">Next</button>
+                            <script src="js/script.js"></script>
+                        </div>
                     </div>
                 </div>
+                <div id="step2" style="display: none;">
+                    <label for="email" class="form-label">Email:</label>
+                    <div class="mb-3 mt-3 row">
+                        <div class="col-6">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="col-3">
+                            <button onclick="prevStep()" class="btn btn-primary">Previous</button>
+                            <button onclick="submitForm()" class="btn btn-primary">Submit</button>
+                            <script src="js/script.js"></script>
+                        </div>
+                    </div>
+                </div>
+
             </form>
         </div>
     </div>
@@ -82,7 +101,16 @@
                 <label for="feedback">Feedback:</label>
                 <textarea class="form-control" rows="5" id="feedback" name="text"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary transform-button" id="myButton">Submit</button>
+            <button type="button" class="btn btn-primary transform-button" id="myButton">Submit</button>
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>THANK YOU!</p>
+                </div>
+
+            </div>
+            <script src="js/modal.js"></script>
             <script src="js/button.js"></script>
         </div>
     </div>

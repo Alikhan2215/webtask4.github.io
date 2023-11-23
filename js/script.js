@@ -1,17 +1,31 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let subscribeButton = document.getElementById('subscribeButton');
+function nextStep() {
+    event.preventDefault();
 
-    if (subscribeButton) {
-        subscribeButton.addEventListener('click', function () {
-            let popover = new bootstrap.Popover(subscribeButton, {
-                content: "You have subscribed!",
-                trigger: "manual",
-            });
-            popover.show();
+    document.getElementById('step1').style.display = 'none';
+    document.getElementById('step2').style.display = 'block';
+}
 
-            setTimeout(function() {
-                popover.hide();
-            }, 4000);
-        });
+function prevStep() {
+    event.preventDefault();
+
+    document.getElementById('step2').style.display = 'none';
+    document.getElementById('step1').style.display = 'block';
+}
+
+function submitForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (name.trim() === "") {
+        alert("Please enter your name.");
+        return false;
     }
-});
+
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+    alert('You have subscribed successfully!');
+    return true;
+}

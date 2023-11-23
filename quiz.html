@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f5c7d6a886.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            background-image: url("img/backgrounds/bgSukkuna.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Site Logo" style="width:160px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="MappaStudio.html">Mappa Studio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TOP Titles</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="jujutsuKaisen.html">Jujutsu Kaisen</a></li>
+                            <li><a class="dropdown-item" href="attackOnTitan.html">Attack on Titan: Final Season</a></li>
+                            <li><a class="dropdown-item" href="chainsawMan.html">Chainsaw Man</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game.html">Mini-Game <i class="fa-solid fa-gamepad"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz <i class="fa-solid fa-feather"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback <i class="fa-solid fa-comment"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- SITE CONTENT -->
+    <div class="container-sm px-5 pt-4 pb-4">
+
+        <div class="container quiz-container">
+            <div class="question" id="question1">
+                <h4>Question 1: How did survive Denji from Chainsaw Man?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="Demon">Saved by a demon</label><br>
+                    <label><input type="radio" name="q1" value="Angel">Saved by an angel</label><br>
+                    <label><input type="radio" name="q1" value="Hospital">Medical help</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question2">
+                <h4>Question 2: What is the name of Chainsaw demon?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="Kochimo">Kochimo</label><br>
+                    <label><input type="radio" name="q2" value="Haruno">Haruno</label><br>
+                    <label><input type="radio" name="q2" value="Pochita">Pochita</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question3">
+                <h4>Question 3: What is Eren's first titan?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="War Hammer">War Hammer</label><br>
+                    <label><input type="radio" name="q3" value="Attack">Attack</label><br>
+                    <label><input type="radio" name="q3" value="Beast">Beast</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question4">
+                <h4>Question 4: At what age Eren lost his mother?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="10">10</label><br>
+                    <label><input type="radio" name="q4" value="9">9</label><br>
+                    <label><input type="radio" name="q4" value="13">13</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question5">
+                <h4>Question 5: What did Itadori eat in order to survive?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="Nail">Nail</label><br>
+                    <label><input type="radio" name="q5" value="Heart">Heart</label><br>
+                    <label><input type="radio" name="q5" value="Finger">Finger</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question6">
+                <h4>Question 6: Who is Gojo for Itadori?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="Sensei">Sensei</label><br>
+                    <label><input type="radio" name="q6" value="Father">Father</label><br>
+                    <label><input type="radio" name="q6" value="Classmate">Classmate</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question7">
+                <h4>Question 7: Does Thorfinn Thorsson have enemies?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="A lot">A lot</label><br>
+                    <label><input type="radio" name="q7" value="No">No</label><br>
+                    <label><input type="radio" name="q7" value="A few">A few</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question8">
+                <h4>Question 8: What is anime Kakegurui about?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="Hungry games">Hungry games</label><br>
+                    <label><input type="radio" name="q8" value="Racers">Racers</label><br>
+                    <label><input type="radio" name="q8" value="Gambling games">Gambling games</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question9">
+                <h4>Question 9: How long Titan Shifters live?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="6">6 years</label><br>
+                    <label><input type="radio" name="q9" value="10">10 years</label><br>
+                    <label><input type="radio" name="q9" value="13">13 years</label>
+                </div>
+            </div><br>
+
+            <div class="question" id="question10">
+                <h4>Question 10: What is the reason Gabimaru from Hell's Paradise wants to escape death sentence?</h4>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="kill">His thirst to kill further</label><br>
+                    <label><input type="radio" name="q10" value="wife">His wife</label><br>
+                    <label><input type="radio" name="q10" value="son">His son</label>
+                </div>
+            </div><br>
+
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <p id="result"></p>
+            <script src="js/quiz.js"></script>
+
+        </div>
+
+    </div>
+    <!-- END OF SITE CONTENT -->
+
+    <!-- FOOTER -->
+    <div class="footer text-center mt-5 pt-4 pb-4">
+        <p>&copy; 2023 MAPPA</p>
+        <a href="https://www.instagram.com/mappastudios/?hl=en"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
+        <a href="https://www.mappa.co.jp/"><i class="fa-regular fa-square-check"></i> Official Site</a>
+    </div>
+
+</body>
+</html>
